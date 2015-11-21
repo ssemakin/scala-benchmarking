@@ -22,7 +22,7 @@ Benchmarking state mutation via updating a single class member nested in a diffe
 ```scala
 Foo2( a: Int )
 Foo1( a: Foo2 )
-For( a: Foo1 )
+Foo( a: Foo1 )
 ```
 
 Test-0 curve shows nested case classes with the Var members. Test-1 curve represents nested case classes
