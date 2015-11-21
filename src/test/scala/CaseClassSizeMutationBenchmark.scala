@@ -44,7 +44,7 @@ object CaseClassSizeMutationBenchmark extends Bench[Double] {
 
   /* tests */
 
-  performance of "State" in {
+  performance of "case-class-members" in {
 
     measure method "assign" in {
       using(classType) in {

@@ -44,7 +44,7 @@ object CaseClassDepthMutationBenchmark extends Bench[Double] {
 
   /* tests */
 
-  performance of "State" in {
+  performance of "nested-case-class-member" in {
 
     measure method "assign" in {
       using(classType) in {
