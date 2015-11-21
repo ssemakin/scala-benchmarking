@@ -20,11 +20,13 @@ Foo( a: Int, b: Int, c: Int etc. )
 Benchmarking state mutation via updating a single class member nested in a different case class i.e.
 
 ```scala
-For( Foo1( Foo2( val a: Int ) ) )
+Foo2( a: Int )
+Foo1( a: Foo2 )
+For( a: Foo1 )
 ```
 
 Test-0 curve shows nested case classes with the Var members. Test-1 curve represents nested case classes
-via the Val members.
+with the Val members.
 
  * X-axis: level of the nested member i.e. "depth"
  * Y-axis: millis to update the nested class member 1 000 000 times.
